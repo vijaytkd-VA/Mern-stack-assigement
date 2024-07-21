@@ -1,0 +1,56 @@
+
+.pie-chart {
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.pie-chart canvas {
+  max-width: 100%;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .pie-chart {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .pie-chart canvas {
+    max-width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .pie-chart {
+    width: 60%;
+    margin: 15px auto;
+  }
+  .pie-chart canvas {
+    max-width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .pie-chart {
+    width: 45%;
+    margin: 20px auto;
+  }
+  .pie-chart canvas {
+    max-width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 993px) {
+  .pie-chart {
+    width: 30%;
+    margin: 20px auto;
+  }
+  .pie-chart canvas {
+    max-width: 100%;
+  }
+}

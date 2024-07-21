@@ -1,0 +1,180 @@
+
+.transactions-table {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  background-color: #f8df8c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.transactions-table input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #060505;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.transactions-table th, .transactions-table td {
+  border: 1px solid #040404;
+  padding: 12px;
+  text-align: left;
+}
+
+
+.transactions-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+.input {
+  background-color: #f8df8c;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+
+.bottom-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+
+.bottom-content button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.bottom-content p {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.bottom-content button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .transactions-table {
+    width: 100%;
+    padding: 10px;
+  }
+  .transactions-table input {
+    width: 100%;
+  }
+  .transactions-table th, .transactions-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .bottom-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottom-content p, .bottom-content button {
+    margin: 5px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .transactions-table {
+    width: 95%;
+  }
+  .transactions-table input {
+    width: 100%;
+  }
+  .transactions-table th, .transactions-table td {
+    font-size: 14px;
+  }
+  .bottom-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottom-content p, .bottom-content button {
+    margin: 5px 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .transactions-table {
+    width: 85%;
+  }
+  .transactions-table input {
+    width: 80%;
+  }
+  .transactions-table th, .transactions-table td {
+    font-size: 16px;
+  }
+  .bottom-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  .bottom-content p, .bottom-content button {
+    margin: 5px 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 993px) {
+  .transactions-table {
+    width: 80%;
+  }
+  .transactions-table input {
+    width: 300px;
+  }
+  .transactions-table th, .transactions-table td {
+    font-size: 16px;
+  }
+  .bottom-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  .bottom-content p, .bottom-content button {
+    margin: 5px 0;
+  }
+}
